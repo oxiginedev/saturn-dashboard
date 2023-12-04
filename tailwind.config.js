@@ -1,3 +1,4 @@
+import colors from 'tailwindcss/colors';
 import defaultTheme from 'tailwindcss/defaultTheme';
 import forms from '@tailwindcss/forms';
 import typography from '@tailwindcss/typography';
@@ -13,6 +14,12 @@ export default {
 
     theme: {
         extend: {
+            colors: {
+                primary: colors.sky,
+                secondary: colors.gray,
+                success: colors.emerald,
+                danger: colors.red
+            },
             fontFamily: {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
             },
